@@ -49,3 +49,4 @@ $res->divide(18,3);
 $res->printOperations();
 $res->clearOperations();
 $res->printOperations();
+1;
