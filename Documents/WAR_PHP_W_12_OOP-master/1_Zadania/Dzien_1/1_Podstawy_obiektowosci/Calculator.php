@@ -1,4 +1,6 @@
 <?php
+//poniżej napisz kod definiujący klasę
+
 class Calculator
 {
     public $history = [];
@@ -10,7 +12,8 @@ class Calculator
         return $result;
     }
 
-    public function multiply(float $num1, float $num2): float {
+    public function multiply(float $num1, float $num2): float
+    {
         $result = $num1 * $num2;
         array_push($this->history, "multiplied $num1 with $num2 got $result");
         return $result;
@@ -23,7 +26,8 @@ class Calculator
         return $result;
     }
 
-    public function divide(float $num1, float $num2): float {
+    public function divide(float $num1, float $num2): float
+    {
         $result = $num1 / $num2;
         array_push($this->history, "divided $num1 by $num2 got $result");
         return $result;
@@ -41,12 +45,12 @@ class Calculator
         $this->history = [];
     }
 }
+
 $res = new Calculator();
-$res->add(18,3);
-$res->subtract(18,3);
-$res->multiply(18,3);
-$res->divide(18,3);
+$res->add(18, 3);
+$res->subtract(18, 3);
+$res->multiply(18, 3);
+$res->divide(18, 3);
 $res->printOperations();
 $res->clearOperations();
 $res->printOperations();
-1;
